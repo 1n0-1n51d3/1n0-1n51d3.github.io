@@ -4,7 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>プライバシーポリシー</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      margin: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #444;
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 25px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    p {
+      margin: 15px 0;
+    }
+    ul {
+      list-style: square;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9em;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -12,14 +68,55 @@
     <p>
       本プライバシーポリシーは、当アプリ（以下、「本アプリ」といいます）がGoogle Playにおいて配布される際に、ユーザーの個人情報及び注文に関連する情報の収集、利用、管理方法について定めたものです。本アプリを利用される前に、本プライバシーポリシーの内容をご一読ください。
     </p>
-    <!-- 以下、プライバシーポリシーの詳細内容を記載 -->
+
     <h2>1. 収集する情報</h2>
+    <p>本アプリでは、以下の情報を収集することがあります。</p>
     <ul>
-      <li><strong>社員番号：</strong>ユーザーが入力する社員番号は、注文状況の確認や認証、注文内容の管理に使用されます。</li>
-      <li><strong>工場選択情報：</strong>ユーザーが選択する工場情報は、注文の配送先として利用されます。</li>
-      <li><strong>注文内容および日付：</strong>カレンダーで選択した日付や注文タイプの情報は、注文の送信・更新・履歴管理のために収集されます。</li>
+      <li><strong>社員番号：</strong> ユーザーが入力する社員番号は、注文状況の確認や認証、注文内容の管理に使用されます。</li>
+      <li><strong>工場選択情報：</strong> ユーザーが選択する工場情報（例：「食堂」「第二工場」など）は、注文の配送先・届け先として利用されます。</li>
+      <li><strong>注文内容および日付：</strong> カレンダーで選択された日付や、注文タイプ（「大盛り」「普通」「少なめ」「キャンセル」）などの情報は、注文の送信、更新、履歴管理のために収集されます。</li>
     </ul>
-    <!-- 以降、利用目的、情報管理方法、第三者提供、ユーザー権利などを記述 -->
+
+    <h2>2. 利用目的</h2>
+    <p>収集した情報は、以下の目的で利用されます。</p>
+    <ul>
+      <li>ユーザー認証および注文状況の管理</li>
+      <li>Notion APIとの連携による注文データの保存・更新</li>
+      <li>アプリの機能向上、ユーザー体験の改善</li>
+      <li>不具合対策や統計データの集計（必要に応じて）</li>
+    </ul>
+
+    <h2>3. 情報の保存と管理</h2>
+    <p>
+      本アプリでは、ユーザーの入力情報は端末内に一時保存（UserDefaults等を利用）されるほか、注文処理のためにNotion APIを通じてサーバーに送信され管理されます。いずれの場合も、収集した情報は不正アクセスや改ざんを防止するために適切な措置を講じ、保護されています。
+    </p>
+
+    <h2>4. 第三者提供および連携</h2>
+    <p>
+      本アプリは注文情報の管理のため、Notion APIを利用します。これにより、お客様の情報がNotion社のサーバーに転送・保存される場合がありますが、Notion社は独自のプライバシーポリシーに基づきこれら情報の管理を行っています。詳細はNotion社のプライバシーポリシーをご確認ください。
+    </p>
+    <p>
+      Notion社プライバシーポリシー：<a href="https://www.notion.so/privacy-policy" target="_blank">https://www.notion.so/privacy-policy</a>
+    </p>
+
+    <h2>5. ユーザーの権利</h2>
+    <p>
+      ユーザーは、自己の個人情報の閲覧、訂正、削除を要求する権利を有します。情報の訂正または削除のご希望がある場合は、下記のお問い合わせ先までご連絡ください。
+    </p>
+
+    <h2>6. プライバシーポリシーの変更</h2>
+    <p>
+      本プライバシーポリシーは、法令の改正やサービス内容の変更に伴い、予告なく変更される場合があります。重要な変更があった場合には、アプリ内や関連ウェブサイトにてお知らせいたします。
+    </p>
+
+    <h2>7. お問い合わせ</h2>
+    <p>
+      本プライバシーポリシーに関するご質問や個人情報に関するお問い合わせは、下記までお願いいたします。
+    </p>
+    <p>
+      Email: <a href="mailto:support@example.com">support@example.com</a>
+    </p>
+
     <footer>
       &copy; 2025 Your Company Name. All rights reserved.
     </footer>
